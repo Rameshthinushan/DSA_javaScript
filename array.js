@@ -24,11 +24,31 @@ myArray.sort(); //[ -1, 0, 2, 3, 4 ]
 myArray.reverse(); //[ 4, 3, 2, 0, -1 ]
 
 //array.copyWithin(target, start, end) *
-myArray.copyWithin(2,0,2) //[ 4, 3, 4, 3, -1 ]
+myArray.copyWithin(2,0,2); //[ 4, 3, 4, 3, -1 ]
 
 //fill all same element
-myArray.fill(10)//[ 10, 10, 10, 10, 10 ]
+//myArray.fill(10); //[ 10, 10, 10, 10, 10 ]
 
 // --------------------------------------------------------
 
-console.log(myArray)
+//Access Methods-------------------------------------------
+
+// concat connect the two arrays 
+// let concate = myArray.concat([100, 200, 300]); //[4, 3, 4, 3, -1, 100, 200, 300]
+// console.log(concate);
+
+// slice
+// let slice = myArray.slice(1, 3); //[ 3, 4 ]
+// console.log(slice)
+
+// includes
+// console.log(myArray.includes(4)); //return true
+
+// `indexof` my array is [ 4, 3, 4, 3, -1 ] two `4` are there but this function gets first `4`
+// console.log(myArray.indexOf(4));
+
+// `lastIndexOf` my array is [ 4, 3, 4, 3, -1 ] tow `4` this function gets second `4`
+// console.log(myArray.lastIndexOf(4))
+
+// join() returns an array as a string
+// console.log(myArray.join());
